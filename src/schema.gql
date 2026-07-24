@@ -1,0 +1,97 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Usuario {
+  id: ID!
+  nombre: String!
+  apellido: String!
+  correo: String!
+  telefono: String
+}
+
+type Proyecto {
+  id: ID!
+  nombre: String!
+  descripcion: String
+}
+
+type Task {
+  idUnic: ID!
+  titulo: String!
+  descripcion: String!
+  estado: EstadosTask!
+  etiquetas: [String!]!
+  fechaCreada: DateTime!
+  idUsuario: Int!
+  idProyecto: Int!
+  usuario: Usuario
+  proyecto: Proyecto
+}
+
+"""Estados posibles"""
+enum EstadosTask {
+  BACKLOG
+  TODO
+  IN_PROGRESS
+  DONE
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  obtenerTodasLasTareas: [Task!]!
+  obtenerTareaPorId(id: Int!): Task!
+  obtenerTodosLosUsuarios: [Usuario!]!
+  obtenerUsuarioPorId(id: Int!): Usuario!
+  obtenerTodosLosProyectos: [Proyecto!]!
+  obtenerProyectoPorId(id: Int!): Proyecto!
+}
+
+type Mutation {
+  crearTarea(createTaskInput: CreateTaskInput!): Task!
+  crearUsuario(createUsuarioInput: CreateUsuarioInput!): Usuario!
+  actualizarUsuario(updateUsuarioInput: UpdateUsuarioInput!): Usuario!
+  eliminarUsuario(id: Int!): Usuario!
+  crearProyecto(createProyectoInput: CreateProyectoInput!): Proyecto!
+  actualizarProyecto(updateProyectoInput: UpdateProyectoInput!): Proyecto!
+  eliminarProyecto(id: Int!): Proyecto!
+}
+
+input CreateTaskInput {
+  titulo: String!
+  descripcion: String
+  estado: EstadosTask!
+  etiquetas: [String!]!
+  idUsuario: Int!
+  idProyecto: Int!
+}
+
+input CreateUsuarioInput {
+  nombre: String!
+  apellido: String!
+  correo: String!
+  telefono: String
+}
+
+input UpdateUsuarioInput {
+  nombre: String
+  apellido: String
+  correo: String
+  telefono: String
+  id: ID!
+}
+
+input CreateProyectoInput {
+  nombreProyec: String!
+  descriProyec: String
+}
+
+input UpdateProyectoInput {
+  nombreProyec: String
+  descriProyec: String
+  id: ID!
+}

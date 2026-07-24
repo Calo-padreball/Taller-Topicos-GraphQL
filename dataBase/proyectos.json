@@ -1,0 +1,15 @@
+{
+  "secuencia": 3,
+  "registros": [
+    {
+      "id": 1,
+      "nombre": "App Móvil",
+      "descripcion": "Desarrollo de aplicación bancaria"
+    },
+    {
+      "id": 2,
+      "nombre": "Plataforma E-Commerce",
+      "descripcion": "Desarrollo de la tienda virtual de la empresa"
+    }
+  ]
+}
