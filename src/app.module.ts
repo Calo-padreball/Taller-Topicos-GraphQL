@@ -1,10 +1,10 @@
-/*
 import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { join } from 'path';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { TasksModule } from './tasks/tasks.module';
+import { UsuariosModule } from './usuarios/usuarios.module';
+import { ProyectosModule } from './proyectos/proyectos.module';
 
 @Module({
   imports: [
@@ -12,31 +12,11 @@ import { AppService } from './app.service';
       driver: ApolloDriver,
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
     }),
+    TasksModule,
+    UsuariosModule,
+    ProyectosModule,
   ],
-  controllers: [AppController],
-  providers: [AppService],
-})
-export class AppModule {}
-*/
-import { Module } from '@nestjs/common';
-import { GraphQLModule } from '@nestjs/graphql';
-import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
-import { join } from 'path';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { AppResolver } from './app.resolver'; // 1. Importamos el resolver
-
-@Module({
-  imports: [
-    GraphQLModule.forRoot<ApolloDriverConfig>({
-      driver: ApolloDriver,
-      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
-    }),
-  ],
-  controllers: [AppController],
-  providers: [
-    AppService, 
-    AppResolver // 2. Lo agregamos aquí
-  ], 
+  controllers: [],
+  providers: [], 
 })
 export class AppModule {}

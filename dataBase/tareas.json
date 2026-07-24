@@ -1,0 +1,96 @@
+{
+  "secuencia": 8,
+  "registros": [
+    {
+      "idUnic": 1,
+      "titulo": "Prueba definitiva",
+      "descripcion": "Texto simple en una sola linea",
+      "estado": "To Do",
+      "etiquetas": [
+        "backend",
+        "graphql"
+      ],
+      "fechaCreada": "2026-07-14T15:35:14.711Z",
+      "idUsuario": 1,
+      "idProyecto": 1
+    },
+    {
+      "idUnic": 2,
+      "titulo": "Prueba definitiva",
+      "descripcion": "Texto simple en una sola linea",
+      "estado": "To Do",
+      "etiquetas": [
+        "backend",
+        "graphql"
+      ],
+      "fechaCreada": "2026-07-14T15:35:39.151Z",
+      "idUsuario": 1,
+      "idProyecto": 1
+    },
+    {
+      "idUnic": 3,
+      "titulo": "Diseñar pantalla de Login",
+      "descripcion": "Crear la interfaz de usuario con Tailwind CSS",
+      "estado": "To Do",
+      "etiquetas": [
+        "Frontend",
+        "Urgente"
+      ],
+      "fechaCreada": "2026-07-16T06:10:20.449Z",
+      "idUsuario": 1,
+      "idProyecto": 1
+    },
+    {
+      "idUnic": 4,
+      "titulo": "Configurar persistencia de datos",
+      "descripcion": "Crear la lógica para guardar y leer los archivos JSON de forma automática",
+      "estado": "In Progress",
+      "etiquetas": [
+        "Backend",
+        "NodeJS"
+      ],
+      "fechaCreada": "2026-07-16T06:15:18.561Z",
+      "idUsuario": 1,
+      "idProyecto": 1
+    },
+    {
+      "idUnic": 5,
+      "titulo": "Configurar persistencia de datos",
+      "descripcion": "Crear la lógica para guardar y leer los archivos JSON de forma automática",
+      "estado": "In Progress",
+      "etiquetas": [
+        "Backend",
+        "NodeJS"
+      ],
+      "fechaCreada": "2026-07-16T06:15:24.171Z",
+      "idUsuario": 1,
+      "idProyecto": 1
+    },
+    {
+      "idUnic": 6,
+      "titulo": "Pruebas unitarias",
+      "descripcion": "Escribir los test para el servicio de usuarios",
+      "estado": "Backlog",
+      "etiquetas": [
+        "QA",
+        "Testing"
+      ],
+      "fechaCreada": "2026-07-16T06:19:48.195Z",
+      "idUsuario": 2,
+      "idProyecto": 1
+    },
+    {
+      "idUnic": 7,
+      "titulo": "Modelar base de datos funcional",
+      "descripcion": "Crear el diagrama entidad relación",
+      "estado": "To Do",
+      "etiquetas": [
+        "Backend",
+        "Diseño"
+      ],
+      "fechaCreada": "2026-07-16T16:51:07.944Z",
+      "idUsuario": 1,
+      "idProyecto": 1
+    }
+  ]
+}

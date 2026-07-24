@@ -1,0 +1,23 @@
+{
+  "secuencia": 4,
+  "registros": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "apellido": "Perez",
+      "correo": "juan@ejemplo.com"
+    },
+    {
+      "id": 2,
+      "nombre": "Maria",
+      "apellido": "Gomez",
+      "correo": "maria@ejemplo.com"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos",
+      "apellido": "Mendoza",
+      "correo": "carlos@ejemplo.com"
+    }
+  ]
+}
